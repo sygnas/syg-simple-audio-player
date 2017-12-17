@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .btn-audio[data-audio-status = "play"]{
+        background-color: #b8860b;
+      }
+      .btn-audio[data-audio-status = "pause"]{
+        background-color: #73d8ff;
+      }
+    </style>
+  </head>
+  <body>
+
+    <p><button class="js-audio btn-audio" data-audio-src="sound/se_1.mp3" data-audio-type="file">ドラムロール</button></p>
+    <p><button class="js-audio btn-audio" data-audio-src="sound/se_2.mp3" data-audio-type="file">ジングル1</button></p>
+    <p><button class="js-audio btn-audio" data-audio-src="sound/se_3.mp3" data-audio-type="file">ジングル1</button></p>
+
+    <p><button class="js-audio-stop">停止</button></p>
+
+
+    <hr>
+    <p>
+      HDS/HLS/MSE形式のストリーミングを自動判別する（ダミーURLなので再生しません）<br>
+      下記のファイルが存在する想定。<br>
+      HDS形式：http://stm.foo.bar/abcd1234.mp4/manifest.f4m<br>
+      HLS形式：http://stm.foo.bar/abcd1234.mp4/playlist.m3u8<br>
+      MSE形式：http://stm.foo.bar/abcd1234.mp4/manifest.mpd <br>
+
+    </p>
+    <p><button class="js-audio btn-audio" data-audio-src="stm.foo.bar/abcd1234.mp4">ストリーミング</button></p>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.9.1/polyfill.min.js"></script>
+    <script src="dash.all.min.js"></script>
+    <script src="bundle.js?4"></script>
+  </body>
+</html>
+
+
+
