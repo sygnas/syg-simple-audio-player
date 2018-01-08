@@ -18,7 +18,7 @@ const paths = {
 let fileName,
   Configure;
 
-fileName = process.env.NODE_ENV !== 'production' ? 'syg-simple-audio-player' : 'syg-simple-audio-player.min';
+fileName = process.env.NODE_ENV !== 'production' ? 'simple-audio-player' : 'simple-audio-player.min';
 
 Configure = {
   input: `${paths.source.root}index.js`,
@@ -39,9 +39,7 @@ Configure = {
     resolve(),
   ],
   external: [
-    'axios',
-    'csv-string',
-    'csv-string/lib/parser',
+    '@sygnas/audio-src',
   ],
 };
 

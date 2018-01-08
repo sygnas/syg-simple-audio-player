@@ -5,7 +5,7 @@
  * @license  MIT
  */
 
-import AudioSrc from 'syg-audio-src';
+import AudioSrc from '@sygnas/audio-src';
 
 
 export default class {

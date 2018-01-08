@@ -1,5 +1,5 @@
 
-import AudioPlayer from '../../dist/syg-simple-audio-player.es';
+import AudioPlayer from '../../dist/simple-audio-player.es';
 
 const audio_player = new AudioPlayer('.js-audio');
 

@@ -1,9 +1,9 @@
 {
-  "name": "syg-simple-audio-player",
+  "name": "@sygnas/simple-audio-player",
   "version": "1.0.0",
   "description": "Play and stop only audio player.",
-  "main": "dist/syg-simple-audio-player.js",
-  "module": "dist/syg-simple-audio-player.es.js",
+  "main": "dist/simple-audio-player.js",
+  "module": "dist/simple-audio-player.es.js",
   "moduleName": "syg-simple-audio-player",
   "private": false,
   "repository": {
@@ -44,6 +44,6 @@
     "rollup-watch": "^4.3.1"
   },
   "dependencies": {
-    "syg-audio-src": "^1.1.0"
+    "@sygnas/audio-src": "^1.1.0"
   }
 }

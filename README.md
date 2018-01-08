@@ -12,7 +12,7 @@ Play and stop only audio player.
 
 ## Install
 ```sh
-npm install syg-simple-audio-player
+npm install --save @sygnas/simple-audio-player
 ```
 
 ## Usage
@@ -50,7 +50,7 @@ MSE形式：http://stm.foo.bar/abcd1234.mp4/manifest.mpd
 
 ### Javascript
 ```JavaScript
-import AudioPlayer from 'syg-simple-audio-player';
+import AudioPlayer from '@sygnas/simple-audio-player';
 
 // .js-audio をクリックすると data-audio-src属性で指定された音声データを再生する
 const audio_player = new AudioPlayer('.js-audio');
